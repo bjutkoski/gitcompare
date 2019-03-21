@@ -15,18 +15,22 @@ const CompareList = ({ repositories }) => (
         <ul>
           <li>
             {repository.stargazers_count}
+            {' '}
             <small>stars</small>
           </li>
           <li>
             {repository.forks_count}
+            {' '}
             <small>forks</small>
           </li>
           <li>
             {repository.open_issues_count}
+            {' '}
             <small>issues</small>
           </li>
           <li>
-            {repository.pushed_at}
+            {repository.lastCommit}
+            {' '}
             <small>last commit</small>
           </li>
         </ul>
